@@ -8,7 +8,6 @@ services:
     environment:
       - FRONT_HOST=todofront
     build: ./todo-app/tests/
-
   todofront:
     ports:
       - 3000:3000
@@ -17,7 +16,6 @@ services:
     environment:
       - REACT_APP_API_HOST=todoback
     build: ./todo-app/front-end/
-
   todoback:
     build: ./todo-app/back-end/
     ports:
